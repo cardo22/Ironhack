@@ -1,0 +1,13 @@
+header {
+    	font-family: Cambria, Georgia, serif;
+    	background-color: #444444;
+    	padding: 20px 5px;
+    	color: white;
+    	font-size: 30px;
+    	font-style: Georgia;
+    	width: 100%;
+    	text-align: center;
+    	-webkit-box-shadow:10px 5px 5px #888888;
+    	-moz-box-shadow:10px 5px 5px #888888;
+    	box-shadow:10px 5px 5px #888888;
+    }

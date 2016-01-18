@@ -1,0 +1,11 @@
+header {
+	color: green;
+	font-size: 28px;
+}
+
+
+footer {
+	color: orange;
+}
+
+p { color: red !important;}
