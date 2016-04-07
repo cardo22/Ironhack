@@ -1,0 +1,86 @@
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<header>
+	<b>Search results:</b>
+</header>
+<h1>What movie was releast in 2005?</h1>
+<form action="/search_results" method="Post">
+		<ul> 
+		   <% @first_nine_result.each do | movies | %>
+       	<% if movies.year == 2005 %>
+				<li>
+					<img src=<%=  movies.poster  %> height="220" width="220" onClick="alert('Yay!')">
+				</li>
+              <%else%>
+				<li>
+					<img src=<%=  movies.poster  %> height="220" width="220" onClick="alert('Nay!')">
+				</li>
+				<%end%>
+			<% end %>
+		</ul>
+
+</form>
+
+	<style>
+    body {
+    	background-color: #cccbcb;
+    	font-family: Candara, Calibri, Seqoe, "Segoe UI", Optima, Arial, sans-serif;
+    	background-image: url("http://www.webdesigndev.com/wp-content/uploads/2015/02/Seamless-Polygon-Backgrounds-Vol.jpg");
+    }
+    header {
+    	font-family: Cambria, Georgia, serif;
+    	background-color: #444444;
+    	padding: 20px 5px;
+    	color: white;
+    	font-size: 30px;
+    	font-style: Georgia;
+    	width: 100%;
+    	text-align: center;
+    	-webkit-box-shadow:10px 5px 5px #888888;
+    	-moz-box-shadow:10px 5px 5px #888888;
+    	box-shadow:10px 5px 5px #888888;
+    }
+    header:hover {
+    	background-color: #00ffff;
+    }
+    a:link {
+    	color: #ffffff;
+    }
+    a:visited {
+    	color: #cccccc;
+    }
+    a:hover {
+    	color: #999999;
+    }
+    footer {
+    	font-family: Cambria, Georgia, serif;
+    	font-size: 20px;
+    	background-color: #444444;
+    	padding: 15px 5px;
+    	border-top: 5px solid white;
+    	color: white;
+    	font-size: 10px;
+    	font-style: italic;
+    	width: 100%;
+    }
+
+    .my-box {
+    	padding: 10px;
+    	margin: 10px;
+    }
+    img {
+    	float: top;
+    }
+
+    ul {
+    list-style-image: url('sqpurple.gif');
+}
+
+</style>
+
+
+
+

@@ -1,0 +1,16 @@
+<html>
+<body>
+	<header>
+		<%= @greeting %>
+	</header>
+	<% if Date.today.tuesday? %>
+	<%= Date.today %>
+	<p>
+		<b>My Bio</b>
+		<span>Hi, I am Ricardo Clarke. I am a Junior Developer.</span>
+	</p>
+	<% end %>
+	<a href="/time_page">Time Page</a>
+</body>
+
+</html>

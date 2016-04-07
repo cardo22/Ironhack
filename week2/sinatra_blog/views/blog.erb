@@ -1,0 +1,18 @@
+<h1>My Blog</h1>
+
+	<% @blog.each do | post|%>
+<ul>
+	<h4>
+	<li>
+		<p>
+		<%= post.title %>
+		<%= post.text %>
+		<%= post.date %>
+	   </p>
+	</li>
+	</h4>
+	<% end %>
+</ul>
+	
+
+

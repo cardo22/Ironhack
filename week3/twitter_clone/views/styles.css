@@ -1,0 +1,61 @@
+/*.container-fluid {
+	height: 400px;
+ 	background-color: #FFFFFF;
+}*/
+./*home-link {
+	float: right;
+}
+*/
+.navbar-header {
+	width: 50%;
+	background-color: white;
+}
+
+.profile-img {
+	width: 80%;
+
+}
+  .brand-picture{
+ 	width: 10%;
+ 	display: inline;
+ 	
+ }
+
+ .Icon {
+	margin-left: -36px;
+}
+ .padding{
+ 	 margin-right: 14px;
+ 	 height: 20%;
+ }
+ 
+ .picture_row {
+ 	height: 50px;
+ 	background-color: black;
+ }
+ 
+ .middle_row {
+ 	border: 2px black;
+ 	margin-bottom: 3px;
+ 	height: 90px;
+ 	background-color: black;
+ }
+
+ .body_row {
+ 	{
+ 	border: 2px black;
+ 	margin-bottom: 3px;
+ 	height: 400px;
+ 	background-color: white;
+ }
+
+.img-responsive {
+	width: 100%;
+	max-height: auto;
+	margin-top: -10;
+}
+
+
+
+
+

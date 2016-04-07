@@ -1,0 +1,21 @@
+
+
+<h1> <%= @task %> </h1>
+<p>
+	<h1>Create Task</h1>
+</p>
+<!-- <form action="/new_task/:creat_task" method="post">
+  <button type="submit" name="task"
+      value="<%= @task%>">
+    
+  </button>
+</form> -->
+<!-- <form action="/new_task" method="Post">
+	<input type="text" name="task_content" placeholder="type task here">
+	<button type="submit" name="operation" value="new text">Type todo list</button>
+</form>
+ -->
+<form action="/create_task" method="POST">
+	<input type="text" name="task_content" placeholder="Task content">
+	<button type="submit">Submit</button>
+</form>

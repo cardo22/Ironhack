@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/styles.css">
+
+<h1> My Task List </h1>
+<ul>
+  <% @tasks.each do | task | %>
+    <li class=" <%= if task.completed? then "completed" end %> ">
+      <%= task.content %>
+
+      <% if !task.completed? %>
+        <!-- /complete/7 -->
+        <!-- /complete/42 -->
+        <form action="/complete/<%= task.id %>" method="post">
+          <button type="submit">
+            Complete
+          </button>
+        </form>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<a href="/new_task">
+  Add a new task
+</a>

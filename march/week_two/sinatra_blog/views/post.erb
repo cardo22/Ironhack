@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Post page</title>
+	</head>
+	<body>
+		<header><h1>My Posts</h1></header>
+		<ul>
+			<% @my_blog.post.each do |each_post| %>
+			<li>
+				<h3><%= each_post.title %></h3>
+	<b>Cat:</b> <%= each_post.category %>
+				<br>
+    <b>Auth:</b> <%= each_post.author %>
+				<br>
+				<b>Created at:</b> <%= each_post.date %>
+				<br>
+				<%= each_post.text %>
+				<% end %>
+			</li>
+		</ul>
+		<a href="/blog_home">Create new</a>
+	</body>
+</html>

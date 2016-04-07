@@ -1,0 +1,18 @@
+<h1> <%= @task %> </h1>
+<p>
+<b>My todo list</b>
+</p>
+<!-- <form action="/new_task/:creat_task" method="post">
+  <button type="submit" name="task"
+      value="<%= @task%>">
+    
+  </button>
+</form> -->
+<form>
+
+	<% @all_task.each do | task | %>
+	<%= task.content %> <br>
+	<% end %>
+	<a href="/create_task">New Task</a>
+</form>
+
