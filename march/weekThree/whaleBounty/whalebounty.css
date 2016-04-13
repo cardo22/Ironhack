@@ -1,0 +1,162 @@
+.main-div {
+	background-color: #f5f5f5;
+	border: 1px solid #E1E3E5; 
+	width: 400px;
+	height: 300px;
+}
+
+
+.bounty-info {
+	/*border: 2px dotted aquamarine;*/
+	background-color: #FFF;
+	width: 80%;
+	height: 67%;
+	margin: 7% 7%;
+	/*box-shadow: 1px 1px 1px #4A4A4A;*/
+	border-radius: 3px;
+}
+
+.row {
+	/*border: 2px dotted aquamarine;*/
+    height: 65px;
+    width: 320;
+    position: relative;
+    left: 15;
+    /*box-shadow: 1px 1px 1px #4A4A4A;*/
+    /*border-top: 1px solid #111111;*/ 
+    border-bottom: 1px solid #ddd; 
+}
+
+.img-circle {
+	position: relative;
+	bottom: -12px;
+	left: 30px;
+	width: 50px;
+	height: 50px;
+	border-radius: 20px;
+}
+
+.img-thumbnail {
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	position: relative;
+    left: 10px;
+    bottom: -8;
+}
+
+.whale-info {
+	position: relative;
+	bottom: -16px;
+	left: 40px;
+}
+
+.whale-info-2 {
+	position: relative;
+    bottom: -10px;
+    left: 15px;
+}
+
+.num {
+	font-weight: 300;
+    position: relative;
+    top: -1;
+    left: -9;
+    color: gold;
+}
+
+.glyphicon {
+	position: relative;
+    top: 16px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: gold;
+
+}
+
+.now-row {
+	border: 2px solid #ddd;
+    height: 25px;
+    width: 45px;
+    position: relative;
+    left: 75;
+    top: -2px;
+}
+
+.now-tag {
+	font-size: small;
+    text-align: center;
+    position: relative;
+    right: -5;
+    color: #F6445A;
+}
+
+.html-row {
+	border: 2px solid #ddd;
+    height: 25px;
+    width: 45px;
+    position: relative;
+    left: 130;
+    top: -27px;
+}
+
+
+.css-row {
+	border: 2px solid #ddd;
+    height: 25px;
+    width: 45px;
+    position: relative;
+    left: 185px;
+    top: -52px;
+}
+
+.html-tag {
+	font-size: small;
+    text-align: center;
+    position: relative;
+    right: -3;
+}
+
+.css-tag {
+	font-size: small;
+    text-align: center;
+    position: relative;
+    right: -5;
+}
+
+.art-tag {
+	position: relative;
+    top: -47px;
+    left: 10px;
+}
+
+#grey-color {
+	position: relative;
+    bottom: 39px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+#comment-button {
+	font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 30px;
+    background-color: white;
+    border-color: #2889D8;
+    position: relative;
+    top: -37px;
+    left: 20px;
+}
+
+
+
+
+
+

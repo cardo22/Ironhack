@@ -4,7 +4,7 @@
 	</head>
 	<body>
 		<header><h1>My Posts</h1></header>
-		<ul>
+		<ol>
 			<% @my_blog.post.each do |each_post| %>
 			<li>
 				<h3><%= each_post.title %></h3>
@@ -17,7 +17,7 @@
 				<%= each_post.text %>
 				<% end %>
 			</li>
-		</ul>
+		</ol>
 		<a href="/blog_home">Create new</a>
 	</body>
 </html>

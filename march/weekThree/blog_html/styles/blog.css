@@ -1,0 +1,21 @@
+.top-row {
+border: 2px dotted aquamarine;
+height: 200px;
+} 
+
+.blog-header {
+	position: relative;
+	bottom: -60%;
+	right: -15%;
+	font-size: x-large;
+}
+
+.second-row {
+	border: 2px dotted aquamarine;
+	height: 500px;
+
+}
+
+.input-col {
+	width: 10px;
+}

@@ -1,0 +1,79 @@
+.box {
+	height: 5px;
+	width: 100%;
+	padding: 50px;
+	background: #654678;
+	border-style: solid;
+	border-width: 10px;
+	margin: 20px;
+}
+
+.content {
+	height: 5px;
+	width: 25%;
+	padding: 30px;
+	margin: -30px;
+	background-color: #ccc;
+}
+
+
+nav {
+	width: 500px;
+	margin: 50px auto 0;
+	height: 50px
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	float: left;
+	list-style-type: none;
+}
+
+
+nav a {
+	display: inline-block;
+	width: 100px;
+	height: 100%;
+	background-color: #ccc;
+	color: #fff;
+	text-decoration: none;
+	line-height: 300%;
+	text-align: center;
+}
+
+.row {
+	height: 5px;
+	width: 100%;
+	padding: 50px;
+	background: #654678;
+	border-style: solid;
+	border-width: 10px;
+	margin: 20px
+}
+
+.collum {
+	height: 5px;
+	width: 25%;
+	padding: 30px;
+	margin: -30px;
+	background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

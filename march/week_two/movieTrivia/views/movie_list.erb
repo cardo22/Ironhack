@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script defer type="text/javascript" src="movieTrivia.js"></script>
+		<title>Search result</title>
+	</head>
+	<header>
+		<h1>Your search results for <%= @key_word %>:</h1>
+	</header>
+	<body>
+		<b>What movie was made in <%=@results[5].year%>?</b> 
+	  <% @results.each do |each_movie| %>
+			<ul>
+				<%if each_movie.year == @results[5].year%>
+					<li>
+						<br>
+						<img src="<%= each_movie.poster %>" onclick="alert('Youre awesome!')">
+					</li>
+					<%else%>
+					<li>
+						<img src="<%= each_movie.poster %>" onclick="alert('You suck!')">
+					</li>
+				<%end%>
+			</ul>
+	   <% end %>
+	   <a href="/search_movie">new search</a>
+	</body>
+
+	<style type="text/css"> 
+	img {max-height: 100px; max-width: 100px;}
+
+	</style>
+</html>

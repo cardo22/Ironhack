@@ -4,6 +4,8 @@ require_relative "lib/passwordCheck.rb"
 
 credencial = Password_checker.new
 
+enable :sessions
+
 get "/home" do
 	erb(:home)
 end

@@ -81,7 +81,9 @@ function question5(){
 question5();
 
 function evaluate(responsesArray){
-	var checkAnswer = if (responsesArray.length === true){
+	// var checkAnswer = 
+
+	if (responsesArray.length === true){
 		console.log('correct');
 	} else{
 		console.log('incorrect');

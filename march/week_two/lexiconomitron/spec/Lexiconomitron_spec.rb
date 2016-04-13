@@ -12,6 +12,6 @@ RSpec.describe "Lexiconomitron" do
     end
 
     it "returns array of words which are less than three." do 
-    	expect(lexi.newWord_arr(["if", "you", "wanna", "be", "my", "lover"]) ).to eq(["if", "you", "be", "my"])
+    	expect(lexi.newWord_arr(["if", "you", "wanna", "be", "my", "lover", "then", "act", "right"]) ).to eq(["if", "you", "be", "my", "ac"])
     end
 end

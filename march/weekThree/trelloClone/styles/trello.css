@@ -1,0 +1,161 @@
+.container-fluid {
+	height: 100%;
+	background-image: url("https://trello-backgrounds.s3.amazonaws.com/53baf533e697a982248cd73f/4200x4200/48dbf0b5a546541e847e267a5dcd2201/shutterstock_134707556.jpg");
+}
+
+/*@media screen and (max-width: 1024px) {
+	.row {
+		width: 100%;
+	}
+}*/
+
+
+.top-row {
+	position: absolute;
+	top: ;
+	background-color: hidden;
+	width: 100%;
+	height: 40px;
+	border-color: black;
+
+}
+
+.first-col {
+	width: ;
+	position: relative;
+    bottom: -10px;
+}
+
+.second-col {
+	width: ;
+	text-align: right;
+	position: relative;
+    bottom: -10px;
+}
+
+.home-anchor {
+	position: relative;
+	left: ;
+}
+
+.tour-anchor {
+	position: relative;
+	right: -1%;
+}
+
+.blog-anchor {
+	position: relative;
+	right: -10px;
+}
+
+.sign-up-anchor {
+	position: relative;
+	right: 3%;
+}
+
+.second-row {
+	position: relative;
+    bottom: -40px;
+    background-color: #fcf8e3;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-color: black;
+
+}
+
+.col-sm-12 {
+	position: relative;
+	bottom: -10px;
+}
+
+.sign-up-link {
+	background-color: rgba(0, 128, 0, 0.39);
+	border-radius: 3px;
+	height: 50%;
+	box-shadow: 0 1px 0 #3f6f21;
+	margin: 0 4px;
+	background: linear-gradient(to bottom,#61bd4f 0,#5aac44 100%);
+	cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 7px 20px;
+    text-align: center;
+    font: 14px "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+
+.col-1 {
+	position: relative;
+    bottom: -90px;
+}
+
+.glyphicon-hdd {
+	position: relative;
+	right: -3%;
+}
+
+.glyphicon-dashboard {
+	position: relative;
+	right: -5%;
+}
+
+.third-row {
+	position: relative;
+	bottom: 40px;
+}
+
+.forth-row {
+	background-color: hidden;
+	width: 100%;
+	height: 75%;
+	position: relative;
+    bottom: -60px;
+}
+
+.list1 {
+	background-color: #f5f5f5;
+	width: 20%;
+	height: 70%;
+}
+
+.list2 {
+	background-color: #f5f5f5;
+	width: 20%;
+	height: 100%;
+	position: relative;
+	right: -10px;
+}
+
+.list3 {
+	background-color: #f5f5f5;
+	width: 20%;
+	height: 40%;
+	position: relative;
+	right: -20px;
+}
+
+.list4 {
+	background-color: #f5f5f5;
+	width: 20%;
+	height: 85%;
+	position: relative;
+	right: -30px;
+}
+
+a {
+	color: #f5f5f5;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.learn-link {
+	color: #8a6d3b;
+}
+
+.agile-board {
+	color: white;
+	font-size: large;
+}
+
+
