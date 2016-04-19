@@ -1,0 +1,10 @@
+<strong>Your results are:</strong>
+<p><%= @word_count %> WPM</p>
+
+<% @ten_dups.each do |word, frequency| %>
+	<% if frequency > 1 %>
+		<strong><%= word %></strong>: is repeated <%= frequency %> times.
+	<% end %>
+<% end %>
+<br>
+<%= link_to "home", "/home/word_central" %>
