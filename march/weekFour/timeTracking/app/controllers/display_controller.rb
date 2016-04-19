@@ -1,2 +1,0 @@
-class DisplayController < ApplicationController
-end

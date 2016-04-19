@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+project_num_6 = Project.create(name: "After Lunch", description: "Testing seeds.rb file")
+seeds = Project.create(name: "Seeds Testing", description: "Expirimenting with rails.")

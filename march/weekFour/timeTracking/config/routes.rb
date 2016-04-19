@@ -3,6 +3,21 @@ Rails.application.routes.draw do
 
    get "/contact", to: 'site#contact'
 
+   #this is the http verb
+   #|      |this is your url
+   #v      |       | this is params placeholder
+   #       v       v
+   get '/say_name/:name', to: 'site#say_name'
+                          #| this is pointing to your controller.rb file
+                          #|      |this is your controller's action/method which talks to your view
+                          #|      |
+                          #v      v 
+   get '/calculate', to: 'site#calculator'
+
+   post '/calculate', to: 'site#calculate'
+
+   get '/project', to: 'projects#index'
+  
  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
