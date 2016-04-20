@@ -1,0 +1,210 @@
+body {
+    background-color:  rgba(158, 158, 158, 0.16);
+}
+
+.row {
+    background-color: white;
+}
+.top-row {
+	border-bottom: 1px solid rgba(158, 158, 158, 0.42);
+	height: 53px;
+	position: relative;
+    top: -1px;
+}
+
+.home-col {
+	/*border: 1px solid red;*/
+	position: relative;
+    bottom: -16px;
+    right: 125px;
+    text-align: right;
+}
+
+.search-col {
+	text-align: center;
+	height: 42px;
+}
+.brand-picture {
+    width: 20px;
+    display: inline;
+}
+
+.img-tag {
+	color: grey;
+}
+
+img {
+    vertical-align: middle;
+    cursor: auto;
+}
+.glyphicon-flash {
+	position: relative;
+    top: 1px;
+    right: -15px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.moments {
+	position: relative;
+	right: 10px;
+}
+a {
+	color: #337ab7;
+    text-decoration: none;
+    position: relative;
+    right: 287px;
+    font-size: 15px;
+    font-family: Helvetica Neue;
+}
+
+.search-bar {
+	border-radius: 40px;
+    width: 244px;
+    height: 34px;
+    text-align: center;
+    background-color: #f5f8fa;
+    border: 1px solid #e1e8ed;
+    position: relative;
+    right: 68px;
+    top: 7px;
+}
+
+.glyphicon-search {
+	position: relative;
+    right: 97px;
+    top: 10
+}
+
+.dropdown {
+	position: relative;
+    left: 17px;
+    bottom: 49px;
+}
+
+.second-row {
+    /*border: 1px solid black;*/
+    background-image: url(https://pbs.twimg.com/profile_banners/1551130856/1454708698/1500x500);
+    height: 340px;
+}
+
+.third-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+    height: 74px;
+}
+
+.profile-col {
+height: 72px;
+}
+
+.profile-img {
+    position: absolute;
+    left: 67px;
+    bottom: -52px;
+    width: 223px;
+    height: 223px;
+    border: 6px solid white;
+    border-radius: 10px;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    float: right;
+    position: relative;
+    top: 33px;
+    right: 25px;
+}
+
+.nav-pills>li {
+    float: left;
+    height: 6px;
+    width: 60px;
+}
+
+h5 {
+    font-size: 14px;
+    position: relative;
+    right: 292px;
+    bottom: 19px;
+}
+
+.nav-pills>li.active>a {
+    color: black;
+    /* background-color: #337ab7; */
+    position: relative;
+    bottom: 25px;
+    position: relative;
+    right: 289px;
+}
+
+.followers {
+    position: relative;
+    bottom: 23px;
+    right: 270px;
+    color: #009999;
+}
+
+.btn-default {
+    color: #333;
+    background-color: rgba(158, 158, 158, 0.07);
+    border-color: rgba(158, 158, 158, 0.13);
+    width: 114px;
+    height: 45px;
+    position: relative;
+    top: 7px;
+    left: 117px;
+}
+
+.add-user-col {
+    position: relative;
+    top: 10;
+    left: -11px;
+}
+
+.4th-row {
+
+}
+
+.4th-row-col1 {
+    border: 1px dotted aqua;
+}
+
+.4th-row-col2 {
+    border: 1px dotted aqua;
+}
+
+.4th-row-col3 {
+    border: 1px dotted aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
