@@ -8,3 +8,11 @@
 
 project_num_6 = Project.create(name: "After Lunch", description: "Testing seeds.rb file")
 seeds = Project.create(name: "Seeds Testing", description: "Expirimenting with rails.")
+
+project1 = Project.create(name: "Emerge", description: "It was a success!")
+
+time_entry1 = TimeEntry.create(project_id: project1.id, hours: 2, minutes: 40, comment: "I am exausted", date: Time.now)
+
+# time_entry2 = TimeEntry.create(project_id: project2.id, hours: 0, minutes: 45, comment: "Was a very short project.", date: Time.now)
+
+puts project1.time_entries.length
