@@ -6,6 +6,9 @@
 			<%= entry.hours %>
 			<%= entry.minutes %>
 			<%= entry.date %>
+
+			<a href="/projects/<%= @my_project.id %>/time_entries/<%= entry.id %>/edit">Edit</a>
+			<%= link_to("DELETE THIS ENTRY", project_time_entry_path(@my_project, entry)) %>		
 		</li>
 	<% end %>
 </ul>
