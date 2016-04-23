@@ -1,0 +1,37 @@
+<h1>Add item to sell</h1>
+<div>
+	<% if @new_product.errors.any? %>
+		<ul>
+			<% @new_product.errors.full_messages.each do |error_message|%>
+			<li>
+				<%= error_message %>
+			</li>
+			<% end %>
+		</ul>
+	<% end %>
+</div>
+
+
+
+<%= form_for @new_product do |f| %>
+	<div>
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</div>
+
+	<div>
+		<%= f.label :description %>
+		<%= f.text_area :description %>
+	</div>
+
+	<div>
+		<%= f.label :deadline %>
+		<%= f.datetime_select :deadline %>
+	</div>
+
+	<div>
+		<%= f.label :price %>
+		<%= f.number_field :price %>
+	</div>
+	<%= f.submit "Add" %>
+<% end %>

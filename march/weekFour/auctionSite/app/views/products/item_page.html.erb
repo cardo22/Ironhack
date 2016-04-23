@@ -1,0 +1,14 @@
+<h1>Products</h1>
+<ul>
+	<% @products.each do |one_product| %>
+	<div>
+		<li>
+			<a href="/users/<%=one_product.user_id%>/products/<%= one_product.id%>">
+				<strong><%= one_product.title %></strong>
+			</a>
+			<br>
+			$<%= one_product.price %>
+		</li>
+	</div>
+	<% end %>
+</ul>
