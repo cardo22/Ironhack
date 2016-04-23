@@ -1,0 +1,33 @@
+<h1><%= @concerts.name %></h1>
+<ul>
+	<b>Details</b>
+	<p>
+	<li>
+		<strong>Artist:</strong>
+		<br>
+		<i><%= @concerts.artist %></i>
+		<br>
+		<strong>Venue:</strong>
+		<br>
+		<i><%= @concerts.venue %></i>
+		<br>
+		<strong>City:</strong>
+		<br>
+		<i><%= @concerts.city %></i>
+		<br>
+		<strong>Date:</strong>
+		<%= @concerts.date %>
+	</li>
+</p>
+<p>
+	<strong style="text-align: center;">Description:</strong>
+	<br>
+	<i><%= @concerts.description %></i>
+</p>
+<div>
+	<strong>Price:</strong>
+	<br>
+	$<b><%= @concerts.price %></b>
+</div>
+</ul>
+<%= link_to "Create new", "/concerts/new" %>

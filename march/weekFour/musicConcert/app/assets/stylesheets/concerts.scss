@@ -1,0 +1,16 @@
+// Place all the styles related to the concerts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    background-color:  rgba(158, 158, 158, 0.16);
+}
+
+.row {
+	background-color: white;
+	border: 1px solid black;
+}
+
+.col-sm-6 {
+	border: 1px dotted red;
+}

@@ -1,0 +1,31 @@
+<div class="container-fluid">
+<div class="row all-concerts-row">
+	<div class="col-sm-6 list-col">
+	<ul>
+	<% @concerts.each do |concert| %>
+		<p>
+		<li>
+			<strong>Name:</strong>
+			<br>
+			<a href="/concerts/<%= concert.id %>"><i><%= concert.name %></i></a>
+			<br>
+			<strong>Artist:</strong>
+			<br>
+			<i><%= concert.artist %></i>
+			<br>
+			<strong>Venue:</strong>
+			<br>
+			<i><%= concert.venue %></i>
+		</li>
+		</p>
+    <% end %>
+	</ul>
+	</div>
+	<div class="col-sm-6 today-concerts-row">
+		
+</div>
+</div>
+
+
+
+
