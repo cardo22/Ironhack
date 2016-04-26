@@ -27,27 +27,30 @@ $(document).on('ready', function(){
 		})
 	});
 
-	$('.submit-char').on('click', function(){
+	$('.submit-char').on('click', function(submit){
+		submit.preventDefault();
 		var newCharacter = {
-			Name: ('#name-input').val(),
-			Occupation: ('#occupation-input').val(),
-			Weapon: ('#weapon-input').val(),
-			Dept: ('#dept-input').val()
+			Name: $("#name-input").val(),
+			Occupation: $("#occupation-input").val(),
+			Weapon: $("#weapon-input").val(),
+			Dept: $("#dept-input").val()
 		};
+		$.ajax({
 
-		type: "post",
+			type: "post",
 
-		url: "https://ironhack-characters.herokuapp.com/characters",
+			url: "https://ironhack-characters.herokuapp.com/characters",
+		
+			data: newCharacter,
 
-		data: newCharacter,
+			success: function(){
+				alert(`${newCharacter.name}, was added.`)
+			},
 
-		success: function(){
-			alert(`${newCharacter.name}, was added.`)
-		},
-
-		error: function(){
-			console.log(error.responseJSON);
-		}
+			error: function(error){
+				console.log(error.responseJSON);
+			}
+		})
 	});
 });
 
