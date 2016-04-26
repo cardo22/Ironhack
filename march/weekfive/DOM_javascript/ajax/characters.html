@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <script src="ajax.js"></script>
+</head>
+	<body>
+		<div>
+			<form id="chars" action="/" method="POST">
+				Name: <input type="text" placeholder="name" id="name-input">
+				<br>
+				Occupation: <input type="text" placeholder="occupation" id="occupation-input">
+				<br>
+				Weapon: <input type="text" placeholder="weapon" id="weapon-input">
+				<br>
+				Dept: <input type="text" placeholder="dept" id="dept-input">
+				<br>
+				<button type="submit" class="submit-char">Submit</button>
+			</form>
+		</div>
+		<section>
+			<ul class="char-list">
+			</ul>
+			<button class="char-display">display</button>
+		</section>
+	</body>
+</html>
