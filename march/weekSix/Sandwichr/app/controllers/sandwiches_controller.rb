@@ -1,53 +1,78 @@
 class SandwichesController < ApplicationController
-	def index
-		sandwiches = Sandwich.all
-		render json: sandwiches
-	end
 
-	def create
-		sandwich = Sandwich.create(sandwich_params)
-		render json: sandwich
-	end
+    def add_ingredient
+        sandwich = load_sandwich(params[:id])
+        if sandwich.nil?
+            return
+        end
+        ingredient = Ingredient.find_by(id: params[:ingredient_id])
+        if ingredient.nil?
+            render json: {error: "ingredient not found"}, status: 404
+            return
+        end
+        new_calories = sandwich.total_calories + ingredient.calories
+        sandwich.update(total_calories: new_calories)
+        sandwich.ingredients.push ingredient
 
-	def show
-		sandwich = Sandwich.find_by(id: params[:id])
-		if sandwich.nil?
-			render json: {error: "sandwich not found"},
-				status: 404
-			return #return in this instance is like using an else
-		end
-		render json: sandwich
-	end
+        redirect_to "/sandwiches/#{params[:id]}"
 
-	def update
-		sandwich = Sandwich.find_by(id: params[:id])
-		if sandwich.nil?
-			render json: {error: "sandwich not found"}, status: 404
-			return
-		end
+    end
 
-		sandwich.update(sandwich_params)
+    def index
+        sandwiches = Sandwich.all
+        render json: sandwiches
+    end
 
-		render json: sandwich_params
-	end
+    def create
+        sandwich = Sandwich.create(sandwich_params)
+        render json: sandwich
+    end
 
-	def destroy
-		sandwich = Sandwich.find_by(id: params[:id])
-		if sandwich.nil?
-			render json: {error: "sandwich not found"}, status: 404
-			return
-		end
+    def show
+        sandwich = load_sandwich(params[:id])
+        if sandwich.nil?
+            return
+        end
 
-		sandwich.destroy
+        render json: sandwich.to_json(include: :ingredients)
+    end
 
-		render json: sandwich_params
-	end
+    def update
+        sandwich = load_sandwich(params[:id])
+        if sandwich.nil?
+            return
+        end
 
+        sandwich.update(sandwich_param)
 
-	private
+        render json: sandwich
+    end
 
-	def sandwich_params
-		params.require(:sandwich)
-			.permit(:name, :bread_type)
-	end
+    def destroy
+        sandwich = load_sandwich(params[:id])
+        if sandwich.nil?
+            return
+        end
+
+        sandwich.destroy
+
+        render json: sandwich
+
+    end
+
+    private
+
+    def sandwich_params
+        params.require(:sandwich).permit(:name, :bread_type)
+    end
+
+    def load_sandwich(id)
+        sandwich = Sandwich.find_by(id: id)
+        if sandwich.nil?
+            render json: {error: "sandwich not found"}, status: 404
+            return
+        end
+        return sandwich
+    end
+
 end

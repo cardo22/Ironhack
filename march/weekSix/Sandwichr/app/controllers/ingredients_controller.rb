@@ -1,36 +1,38 @@
 class IngredientsController < ApplicationController
+    def create
+        ingredient = Ingredient.create(ingredient_params)
+        render json: ingredient
+    end
 
-	def create
-		ingredients = Ingredient.create(ingredient_params)
-		render json: ingredients
-	end
+    def destroy
+        ingredient = load_ingredient(params[:id])
 
-	def show
-		ingredients = Ingredient.where(id: params[:id])
-		if ingredients.nil?
-			render json: {error: "ingredient not found"},
-				status: 404
-		render json: ingredient
-	end
+        ingredient.destroy
 
-	def destroy
-		ingredients = Ingredient.find_by(id: params[:id])
-		if ingredients.nil?
-			render json: {error: "ingredient not found"},
-				status: 404
-				return
-		end
+        render json: ingredient
 
-		ingredients.destroy
+    end
 
-		render json: ingredient_params
-	end
+    def show
+        ingredient = load_ingredient(params[:id])
+        if ingredient.nil?
+            return
+        end
+        render json: ingredient
+    end
 
-	private
+    private
 
-	def ingredient_params
-		params.require(:ingredient)
-			.permit(:name, :calories)
-		end
-	end
+    def ingredient_params
+        params.require(:ingredient).permit(:name, :calories)
+    end
+
+    def load_ingredient(id)
+        ingredient = Ingredient.find_by(id: id)
+        if ingredient.nil?
+            render json: {error: "ingredient not found"}, status: 404
+            return
+        end
+        return ingredient
+    end
 end
