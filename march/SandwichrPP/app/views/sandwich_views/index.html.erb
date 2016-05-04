@@ -1,0 +1,9 @@
+<h1>Here are the sandwiches</h1>
+
+<ul>
+	<% @sandwiches.each do |sand| %>
+		<li> 
+			<a href="/sandwiches/<%= sand.id %>"><%= sand.name %></a>
+		</li>
+	<% end %>
+</ul>

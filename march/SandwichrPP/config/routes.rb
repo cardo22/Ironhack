@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
-  get '/' => 'site#index'
-  devise_for :users
-  resources :comics
+  resources :sandwiches, only: [:index, :show], controller: "sandwich_views"
+  
+  scope "/api" do
+    resources :sandwiches
+    resources(:ingredients, except: [:new, :edit])
+    resources(:sandwiches, except:[:new, :edit])
+
+    post '/sandwiches/:id/ingredients/add', to: 'sandwiches#add_ingredient'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
